@@ -1,0 +1,184 @@
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# \git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git branch GiriSpace
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git branch -a
+  GiriSpace
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JyothiJ
+  remotes/origin/Prathima
+  remotes/origin/bharat
+  remotes/origin/dev
+  remotes/origin/development
+  remotes/origin/feature-1
+  remotes/origin/feature-2
+  remotes/origin/main
+  remotes/origin/manoj
+  remotes/origin/vardha
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git checkout GiriSpace
+Switched to branch 'GiriSpace'
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# ls
+readme.md  varadha.txt  webapp
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git status
+On branch GiriSpace
+nothing to commit, working tree clean
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# for a in aws devops linux shell ; do mkdir $a && touch $a/Readme.md; done
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# ls
+aws  devops  linux  readme.md  shell  varadha.txt  webapp
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git status
+On branch GiriSpace
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aws/
+        devops/
+        linux/
+        shell/
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git add .
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git status
+On branch GiriSpace
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   aws/Readme.md
+        new file:   devops/Readme.md
+        new file:   linux/Readme.md
+        new file:   shell/Readme.md
+
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git commit -m "commit from Giri"
+[GiriSpace 46dc629] commit from Giri
+ Committer: root <root@ip-172-31-20-0.ec2.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aws/Readme.md
+ create mode 100644 devops/Readme.md
+ create mode 100644 linux/Readme.md
+ create mode 100644 shell/Readme.md
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git config --global --edit
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git commit --amend --reset-author
+[GiriSpace e5343c5] commit from Giri
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aws/Readme.md
+ create mode 100644 devops/Readme.md
+create mode 100644 linux/Readme.md
+ create mode 100644 shell/Readme.md
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git push
+fatal: The current branch GiriSpace has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin GiriSpace
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git push --set-upstream origin GiriSpace
+Username for 'https://github.com': ManojKRISHNAPPA 
+Password for 'https://ManojKRISHNAPPA@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 410 bytes | 410.00 KiB/s, done.
+Total 4 (delta 0), reused 2 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'GiriSpace' on GitHub by visiting:
+remote:      https://github.com/ManojKRISHNAPPA/microdegree-IT-batch-2025/pull/new/GiriSpace
+remote: 
+To https://github.com/ManojKRISHNAPPA/microdegree-IT-batch-2025.git
+ * [new branch]      GiriSpace -> GiriSpace
+branch 'GiriSpace' set up to track 'origin/GiriSpace'.
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git status
+On branch GiriSpace
+Your branch is up to date with 'origin/GiriSpace'.
+
+nothing to commit, working tree clean
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# git log -p
+commit e5343c5f58736bc4ca504374b2080d65c485819d (HEAD -> GiriSpace, origin/GiriSpace)
+Author: Giri Birnurkar <giri@gmail.com>
+Date:   Sat Sep 13 13:40:33 2025 +0000
+
+    commit from Giri
+
+diff --git a/aws/Readme.md b/aws/Readme.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/devops/Readme.md b/devops/Readme.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/linux/Readme.md b/linux/Readme.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/shell/Readme.md b/shell/Readme.md
+new file mode 100644
+index 0000000..e69de29
+
+commit 006122deca3f6c35425cf89f15a7ac3fd93ab52d (origin/main, origin/HEAD, main)
+Author: JyothiJ <jyothij1056@gmail.com>
+Date:   Sat Sep 13 10:38:44 2025 +0000
+
+[root@ip-172-31-20-0 microdegree-IT-batch-2025]# history
+    1  git
+    2  yum install git
+    3  git
+    4  git -v
+    5  clear
+    6  ls
+    7  ls -a
+    8  clear
+    9  git clone https://github.com/ManojKRISHNAPPA/microdegree-IT-batch-2025.git
+   10  ls
+   11  cd microdegree-IT-batch-2025/
+   12  ls
+   13  ls -a
+   14  cd webapp
+   15  ls
+   16  clear
+   17  cd ..
+   18  ls
+   19  cd webapp/
+   20  ls
+   21  cat index.html 
+   22  cd ..
+   23  clear
+   24  ls
+   25  cd ..
+   26  ls
+   27  git
+   28  clear
+   29  git status
+   30  ls
+   31  cd microdegree-IT-batch-2025/
+   32  ls
+   33  clear
+   34  \git status
+   35  git branch GiriSpace
+   36  git branch -a
+   37  git checkout GiriSpace
+   38  ls
+   39  git status
+   40  for a in aws devops linux shell ; do mkdir $a && touch $a/Readme.md; done
+   41  ls
+   42  git status
+   43  git add .
+   44  git status
+   45  git commit -m "commit from Giri"
+   46  git config --global --edit
+   47  git commit --amend --reset-author
+   48  git push
+   49  git push --set-upstream origin GiriSpace
+   50  git status
+   51  git log -p
+   52  history
