@@ -1,0 +1,30 @@
+[ec2-user@ip-172-31-36-141 ~]$ 
+
+Ec2-user- Aws linux default username
+ip-172-31-36-141  - Hostname
+~  - Desktop
+$  - non root user
+# -  root user
+
+sudo su - To switch  user 
+sudo -i    - To switch root 
+sudo su -amith - To switch user to amith 
+pwd - Present working directory 
+mkdir - Create directory 
+ls - list
+ls -l  - list with types of documents
+ls -l  - ll (alias)
+ls -a - to find the hidden files
+
+Mkdir -p test1/test2/test3/test4 - {to store log we will folder}
+P means consider it has parent folder
+Crtl + C  -to exit
+
+cd/var/log/dnf.log - to check log files
+mkdir dir_{1..100} - to create 100 directory
+rmdir dir_{1..100} - to remove 100 directory
+mv dir* yog - to move multiple directory to yog folder
+/ - root directory
+~ - home directory
+
+:wq
