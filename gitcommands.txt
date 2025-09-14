@@ -1,0 +1,9 @@
+git init  - to initialize
+git status - to check status 
+git add <filename> < {.} for present directory> - to add files
+git commit -m “ this is my first commit”  - this for commit with message
+git config --global --edit  - Once time change to add username and email
+git commit --amend --reset-author
+git log -  to check commit id , date , time and who commit the changes
+git log - p - for detailed  view
+git remote -v - to check whether folder is linked to repository or not
