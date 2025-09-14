@@ -6,3 +6,4 @@ this is from vscode
 this is from terminal
 
 This is from VSC changed by Giri
+Another line added by VSC by Giri and used terminal this terminal.
