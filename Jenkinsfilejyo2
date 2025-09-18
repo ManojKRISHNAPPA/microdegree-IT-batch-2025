@@ -1,0 +1,21 @@
+pipeline{
+       agent any
+
+       stages {
+        stage('git-checkout'){
+           steps {
+               git branch:'version-1',url:'https://github.com/ManojKRISHNAPPA/microdegree-IT-batch-2025.git'
+                 }
+              }
+        stage('compile'){
+           steps {
+                  sh "mvn compile"
+                 }
+               }
+        stage('Build') {
+          steps {
+                 sh "mvn package"
+                }
+             }
+          }
+}
